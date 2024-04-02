@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/styles.css">
+    <title>Email Sender</title>
+</head>
+<body>
+    <h1>Send Email</h1>
+    <form method="POST" enctype="multipart/form-data">
+        <label for="recipient_email">Recipient Email:</label><br>
+        <input type="email" id="recipient_email" name="recipient_email"><br><br>
+
+        <label for="subject">Subject:</label><br>
+        <input type="text" id="subject" name="subject"><br><br>
+
+        <label for="body">Body:</label><br>
+        <textarea id="body" name="body"></textarea><br><br>
+
+        <label for="file">Upload File:</label><br>
+        <input type="file" id="file" name="file"><br><br>
+
+        <label for="textarea_emails">Emails (Separated by comma or newline):</label><br>
+        <textarea id="textarea_emails" name="textarea_emails"></textarea><br><br>
+
+        <input type="submit" value="Send Email">
+    </form>
+</body>
+</html>
